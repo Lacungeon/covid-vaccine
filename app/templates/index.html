@@ -1,0 +1,6 @@
+{% for article in articles %}
+<div style="padding: 2px 15px; margin: 10px; border: 1px solid black; border-radius: 8px;">
+<h3><a href="{{article.url}}" style="text-decoration: none; color: darkgreen" >{{article.title}}</a></h3>
+<p>{{article.description|truncatewords:50}}</p>
+</div>
+{% endfor %}
